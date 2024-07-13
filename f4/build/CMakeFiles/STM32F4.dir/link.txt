@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/STM32F4.dir/Core/Src/main.c.o -o STM32F4 
