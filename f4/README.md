@@ -40,3 +40,6 @@ Build 중 Device 선택 안됨 FLAG 설정 필요
 
 
 ### step 7 : 빌드 플래그 설정
+1. 일단 적용 후 수정 예정
+2. [Linker Script Template](STM32CubeF4/Projects/STM32F446ZE-Nucleo/Templates/STM32CubeIDE/STM32F446ZETX_FLASH.ld) 가져오기
+3. Linker Script 수정

@@ -14,3 +14,5 @@ set(CMSIS_INC ${CMSIS_PATH}/Include)
 # lib
 add_library(stm32cubef4 INTERFACE ${HAL_SRC} ${CMSIS_SRC})
 target_include_directories(stm32cubef4 INTERFACE ${HAL_INC} ${CMSIS_INC} ${HAL_CFG_PATH})
+target_compile_definitions(stm32cubef4 INTERFACE ${MCU_FAMILY})
+target_compile_options(stm32cubef4 INTERFACE ${MCU_PARAM} --verbose)
