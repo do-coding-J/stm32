@@ -24,5 +24,5 @@ file(GLOB_RECURSE MAIN_SRC ${MAIN_PATH}/Src/*.c)
 
 add_executable(${PROJECT_NAME} ${MAIN_SRC})
 target_link_libraries(${PROJECT_NAME} PUBLIC stm32cubef4)
-
+target_include_directories(${PROJECT_NAME} PUBLIC ${MAIN_PATH}/Inc)
 

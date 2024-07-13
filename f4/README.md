@@ -26,4 +26,17 @@ stm32f4xx_hal_conf.h 없음 확인
 ### step 5 : stm32f4xx_hal_conf.h 작성
 1. [stm32f4xx_hal_conf.h](Core/Config/stm32f4xx_hal_config.h) 생성
 2. [Template 가져오기](STM32CubeF4/Projects/STM32F446ZE-Nucleo/Templates/Inc/stm32f4xx_hal_conf.h)
-3. [stm32f4xx_hal_conf.h](Core/Config/stm32f4xx_hal_config.h)에서 사용 할 모듈 수정 하기[34:78] 66까지만 함
+3. [stm32f4xx_hal_conf.h](Core/Config/stm32f4xx_hal_config.h)에서 사용 할 모듈 수정 하기[34:78]
+4. [stm32f4xx_hal_conf.h](Core/Config/stm32f4xx_hal_config.h) 그 외 설정 값은 기본으로 놔둠
+5. #include <stdint.h> 추가
+
+### step 6 : 다시 빌드
+```
+/home/jj/ws/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:174:2: error: #error "Please select first the target STM32F4xx device used in your application (in stm32f4xx.h file)"
+  174 | #error "Please select first the target STM32F4xx device used in your application (in stm32f4xx.h file)"
+      |  ^~~~~
+```
+Build 중 Device 선택 안됨 FLAG 설정 필요
+
+
+### step 7 : 빌드 플래그 설정

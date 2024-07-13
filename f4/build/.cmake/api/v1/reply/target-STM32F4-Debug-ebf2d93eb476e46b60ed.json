@@ -11,7 +11,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -33,6 +34,12 @@
 				"file" : 0,
 				"line" : 26,
 				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 0
 			}
 		]
 	},
@@ -48,6 +55,10 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 3,
+					"path" : "/home/jj/ws/stm32/f4/Core/Inc"
+				},
+				{
 					"backtrace" : 2,
 					"path" : "/home/jj/ws/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc"
 				},
@@ -58,6 +69,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "/home/jj/ws/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/jj/ws/stm32/f4/Core/Config"
 				}
 			],
 			"language" : "C",

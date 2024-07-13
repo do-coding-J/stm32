@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/jj/ws/stm32/f4/build",
-  "command": "/usr/bin/cc  -I/home/jj/ws/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -g -o CMakeFiles/STM32F4.dir/Core/Src/main.c.o -c /home/jj/ws/stm32/f4/Core/Src/main.c",
+  "command": "/usr/bin/cc  -I/home/jj/ws/stm32/f4/Core/Inc -I/home/jj/ws/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/stm32/f4/Core/Config -g -o CMakeFiles/STM32F4.dir/Core/Src/main.c.o -c /home/jj/ws/stm32/f4/Core/Src/main.c",
   "file": "/home/jj/ws/stm32/f4/Core/Src/main.c"
 }
 ]
