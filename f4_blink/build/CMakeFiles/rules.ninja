@@ -12,6 +12,16 @@
 # =============================================================================
 
 #############################################
+# Rule for compiling ASM files.
+
+rule ASM_COMPILER__stm32cubef4_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building ASM object $out
+
+
+#############################################
 # Rule for compiling C files.
 
 rule C_COMPILER__stm32cubef4_Debug
@@ -71,7 +81,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/jj/ws/personal/stm32/f4 -B/home/jj/ws/personal/stm32/f4/build
+  command = /usr/bin/cmake --regenerate-during-build -S/home/jj/ws/personal/stm32/f4_blink -B/home/jj/ws/personal/stm32/f4_blink/build
   description = Re-running CMake...
   generator = 1
 

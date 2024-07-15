@@ -118,27 +118,27 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/jj/ws/personal/stm32/f4/Core/Inc"
+					"path" : "/home/jj/ws/personal/stm32/f4_blink/Core/Inc"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc"
+					"path" : "/home/jj/ws/personal/stm32/f4_blink/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
+					"path" : "/home/jj/ws/personal/stm32/f4_blink/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
+					"path" : "/home/jj/ws/personal/stm32/f4_blink/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include"
+					"path" : "/home/jj/ws/personal/stm32/f4_blink/STM32CubeF4/Drivers/CMSIS/Include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/jj/ws/personal/stm32/f4/Core/Config"
+					"path" : "/home/jj/ws/personal/stm32/f4_blink/Core/Config"
 				}
 			],
 			"language" : "C",
@@ -226,27 +226,27 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/jj/ws/personal/stm32/f4/Core/Inc"
+					"path" : "/home/jj/ws/personal/stm32/f4_blink/Core/Inc"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc"
+					"path" : "/home/jj/ws/personal/stm32/f4_blink/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
+					"path" : "/home/jj/ws/personal/stm32/f4_blink/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
+					"path" : "/home/jj/ws/personal/stm32/f4_blink/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include"
+					"path" : "/home/jj/ws/personal/stm32/f4_blink/STM32CubeF4/Drivers/CMSIS/Include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/jj/ws/personal/stm32/f4/Core/Config"
+					"path" : "/home/jj/ws/personal/stm32/f4_blink/Core/Config"
 				}
 			],
 			"language" : "ASM",
@@ -308,7 +308,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-T/home/jj/ws/personal/stm32/f4/Core/Config/FLASH.ld",
+				"fragment" : "-T/home/jj/ws/personal/stm32/f4_blink/Core/Config/FLASH.ld",
 				"role" : "flags"
 			},
 			{

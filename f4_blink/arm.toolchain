@@ -1,0 +1,55 @@
+# set as cross compile
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_SYSTEM_PROCESSOR arm)
+
+# cross compiler prefix & path
+set(TOOLCHAIN_PATH /usr/bin)
+set(TOOLCHAIN_PREFIX arm-none-eabi-)
+
+# cmake compiler set
+set(CMAKE_C_COMPILER ${TOOLCHAIN_PATH}/${TOOLCHAIN_PREFIX}gcc) # gcc
+set(CMAKE_ASM_COMPILER ${CMAKE_C_COMPILER}) # gcc
+set(CMAKE_CXX_COMPILER ${TOOLCHAIN_PATH}/${TOOLCHAIN_PREFIX}g++) # g++
+set(CMAKE_OBJCOPY ${TOOLCHAIN_PATH}/${TOOLCHAIN_PREFIX}objcopy) # objcopy
+set(CMAKE_SIZE ${TOOLCHAIN_PATH}/${TOOLCHAIN_PREFIX}size) # size
+
+# Language version should be higher than 11 due to linker script
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_C_EXTENSIONS ON)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS ON)
+
+# set executable type
+set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
+
+set(ARM_FLAG
+    -fdata-sections
+    -ffunction-sections
+    --specs=nano.specs
+    -Wl,--gc-sections
+    $<$<COMPILE_LANGUAGE:CXX>:
+    -fno-rtti
+    -fno-exceptions
+    -fno-threadsafe-statics>)
+
+set(COMPILE_FLAG
+    -Wall
+    -Wextra
+    -Wpedantic
+    -Wno-unused-parameter
+    -Wno-binary-constants
+    $<$<COMPILE_LANGUAGE:CXX>:
+    -Wno-volatile
+    -Wold-style-cast
+    -Wuseless-cast
+    -Wsuggest-override>
+    $<$<CONFIG:Debug>:-Og
+    -g3
+    -ggdb>
+    $<$<CONFIG:Release>:-Og
+    -g0>)
+
+set(LINK_FLAG -Wl,--start-group -lc -lm -lstdc++ -Wl,--end-group
+              -Wl,--print-memory-usage)

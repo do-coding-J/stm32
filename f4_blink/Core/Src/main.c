@@ -1,10 +1,5 @@
 #include "main.h"
 
-void SysTick_Handler(void)
-{
-  HAL_IncTick();
-}
-
 static void Error_Handler(void)
 {
     while (1)
@@ -55,14 +50,34 @@ static void SystemClock_Config(void)
     }
 }
 
+void gpio_init(void)
+{
+    GPIO_InitTypeDef gpio_init;
+
+    // LEDs
+    gpio_init.Pin = LED_GREEN_Pin | LED_BLUE_Pin | LED_RED_Pin;
+    gpio_init.Mode = GPIO_MODE_OUTPUT_PP;
+    gpio_init.Pull = GPIO_NOPULL;
+    gpio_init.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(GPIOB, &gpio_init);
+}
+
 int main(void)
 {
     HAL_Init();
     SystemClock_Config();
 
+    gpio_init();
+
     while (1)
     {
         /* code */
+        HAL_GPIO_TogglePin(LED_GREEN_Port, LED_GREEN_Pin);
+        HAL_Delay(100);
+        HAL_GPIO_TogglePin(LED_BLUE_Port, LED_BLUE_Pin);
+        HAL_Delay(100);
+        HAL_GPIO_TogglePin(LED_RED_Port, LED_RED_Pin);
+        HAL_Delay(100);
     }
     return 0;
 }

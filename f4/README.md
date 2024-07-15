@@ -156,4 +156,39 @@ build finished with warning(s).
 ### step 16 : uploading sh file
 1. 업로드 가능한 [upload.sh](upload.sh) 작성
 
-### END
+### step 17 : 디버깅해보기
+1. [lauch.json](.vscode/launch.json) 파일 작성 후 디버깅 해보기
+```
+LiveGDB: Reset_Handler () at /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s:61
+LiveGDB: 61	  ldr   sp, =_estack      /* set stack pointer */
+LiveGDB: Program stopped, probably due to a reset and/or halt issued by debugger
+```
+startup script에서 빠져나오질 못함
+-> 찾아보니 Systick_Handler의 부재로 인해 스택포인터가 오르지 않은 것으로 확인  
+2. [main.c](./Core/Src/main.c)[2:6]에 void SysTick_Handler(void) 추가
+3. 확인을 위해 글로벌 변수 uwTick 확인
+4. 다시 빌드 후 디버깅
+
+```
+LiveGDB: Reset_Handler () at /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s:61
+LiveGDB: 61	  ldr   sp, =_estack      /* set stack pointer */
+LiveGDB: Program stopped, probably due to a reset and/or halt issued by debugger
+Started live-monitor-gdb session
+Note: automatically using hardware breakpoints for read-only addresses.
+
+Program
+ received signal SIGINT, Interrupt.
+WWDG_IRQHandler () at /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s:114
+114	  b  Infinite_Loop
+```
+5. WWDG_IRQHandler에러 우선 빌드에서 제외 [stm32f4xx_hal_conf.h](Core/Config/stm32f4xx_hal_conf.h)[72] 주석
+6. 다시 빌드
+```
+LiveGDB: Reset_Handler () at /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s:61
+LiveGDB: 61	  ldr   sp, =_estack      /* set stack pointer */
+LiveGDB: Program stopped, probably due to a reset and/or halt issued by debugger
+```
+7. 터지는 부분을 Call Stack으로 찍어보면 [이부분](Core/Config/startup_stm32f446xx.s)[98] __libc_init_array에서 터진다 
+
+
+### step 18 : main()까지 가는 길 검토하기

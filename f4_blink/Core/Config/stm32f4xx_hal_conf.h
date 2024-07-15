@@ -69,7 +69,7 @@
 #define HAL_USART_MODULE_ENABLED            // universal syncronous asyncronous receive transmit
 /* #define HAL_IRDA_MODULE_ENABLED  */
 /* #define HAL_SMARTCARD_MODULE_ENABLED  */
-/* #define HAL_WWDG_MODULE_ENABLED  */             // windowed watchdog
+#define HAL_WWDG_MODULE_ENABLED             // windowed watchdog
 #define HAL_CORTEX_MODULE_ENABLED           // enabled as default
 /* #define HAL_PCD_MODULE_ENABLED */
 /* #define HAL_HCD_MODULE_ENABLED */
