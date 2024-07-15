@@ -1,3 +1,6 @@
 [submodule "f4/STM32CubeF4"]
 	path = f4/STM32CubeF4
 	url = git@github.com:STMicroelectronics/STM32CubeF4.git
+[submodule "f4_blink/STM32CubeF4"]
+	path = f4_blink/STM32CubeF4
+	url = git@github.com:STMicroelectronics/STM32CubeF4.git
