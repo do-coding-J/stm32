@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "STM32F4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-STM32F4-Debug-5098870fcef453045674.json",
+					"jsonFile" : "target-STM32F4-Debug-f717fbc0290bd41ab018.json",
 					"name" : "STM32F4",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "stm32cubef4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-stm32cubef4-Debug-c0a9541b028b99e9a8f4.json",
+					"jsonFile" : "target-stm32cubef4-Debug-4145c66fac379bb235ea.json",
 					"name" : "stm32cubef4",
 					"projectIndex" : 0
 				}
@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/jj/ws/stm32/f4/build",
-		"source" : "/home/jj/ws/stm32/f4"
+		"build" : "/home/jj/ws/personal/stm32/f4/build",
+		"source" : "/home/jj/ws/personal/stm32/f4"
 	},
 	"version" : 
 	{

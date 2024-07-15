@@ -1,4 +1,4 @@
-/home/jj/ws/stm32/f4/build/CMakeFiles/stm32cubef4.dir
-/home/jj/ws/stm32/f4/build/CMakeFiles/STM32F4.dir
-/home/jj/ws/stm32/f4/build/CMakeFiles/edit_cache.dir
-/home/jj/ws/stm32/f4/build/CMakeFiles/rebuild_cache.dir
+/home/jj/ws/personal/stm32/f4/build/CMakeFiles/stm32cubef4.dir
+/home/jj/ws/personal/stm32/f4/build/CMakeFiles/STM32F4.dir
+/home/jj/ws/personal/stm32/f4/build/CMakeFiles/edit_cache.dir
+/home/jj/ws/personal/stm32/f4/build/CMakeFiles/rebuild_cache.dir

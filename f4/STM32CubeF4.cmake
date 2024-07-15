@@ -8,11 +8,13 @@ set(HAL_INC ${HAL_PATH}/Inc ${HAL_PATH}/Inc/Legacy)
 set(HAL_CFG_PATH ${MAIN_PATH}/Config)
 
 # CMSIS
-set(CMSIS_SRC ${CMSIS_PATH}/Source/Templates/gcc/startup_${MCU_MODEL_L}.s)
-set(CMSIS_INC ${CMSIS_PATH}/Include)
+set(CMSIS_SRC ${CMSIS_PATH}/Device/ST/${MCU_FAMILY}/Source/Templates/gcc/startup_${MCU_MODEL_L}.s)
+set(CMSIS_INC ${CMSIS_PATH}/Device/ST/${MCU_FAMILY}/Include ${CMSIS_PATH}/Include)
 
 # lib
-add_library(stm32cubef4 INTERFACE ${HAL_SRC} ${CMSIS_SRC})
-target_include_directories(stm32cubef4 INTERFACE ${HAL_INC} ${CMSIS_INC} ${HAL_CFG_PATH})
-target_compile_definitions(stm32cubef4 INTERFACE ${MCU_FAMILY})
-target_compile_options(stm32cubef4 INTERFACE ${MCU_PARAM} --verbose)
+add_library(stm32cubef4 STATIC ${HAL_SRC} ${CMSIS_SRC})
+target_include_directories(stm32cubef4 PUBLIC ${HAL_INC} ${CMSIS_INC} ${HAL_CFG_PATH})
+
+target_compile_definitions(stm32cubef4 PUBLIC ${MCU_MODEL_U})
+target_compile_options(stm32cubef4 PUBLIC ${MCU_PARAM} --verbose ${COMPILE_FLAG})
+target_link_options(stm32cubef4 PUBLIC ${LINK_FLAG} -T${MCU_LINKER_SCRIPT} ${ARM_FLAG})

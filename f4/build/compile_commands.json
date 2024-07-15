@@ -1,7 +1,482 @@
 [
 {
-  "directory": "/home/jj/ws/stm32/f4/build",
-  "command": "/usr/bin/cc -DSTM32F4xx -I/home/jj/ws/stm32/f4/Core/Inc -I/home/jj/ws/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/stm32/f4/Core/Config -g --verbose -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -o CMakeFiles/STM32F4.dir/Core/Src/main.c.o -c /home/jj/ws/stm32/f4/Core/Src/main.c",
-  "file": "/home/jj/ws/stm32/f4/Core/Src/main.c"
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -o CMakeFiles/stm32cubef4.dir/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/STM32F4.dir/Core/Src/main.c.obj -c /home/jj/ws/personal/stm32/f4/Core/Src/main.c",
+  "file": "/home/jj/ws/personal/stm32/f4/Core/Src/main.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -std=gnu11 -o CMakeFiles/STM32F4.dir/Core/Src/system_stm32f4xx.c.obj -c /home/jj/ws/personal/stm32/f4/Core/Src/system_stm32f4xx.c",
+  "file": "/home/jj/ws/personal/stm32/f4/Core/Src/system_stm32f4xx.c"
+},
+{
+  "directory": "/home/jj/ws/personal/stm32/f4/build",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F446xx -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp --verbose -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb -o CMakeFiles/STM32F4.dir/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s.obj -c /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s",
+  "file": "/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s"
 }
 ]

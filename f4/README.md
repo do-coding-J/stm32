@@ -1,5 +1,7 @@
 ## Cmake 사용하여 STM32F4 HAL 빌드하기 
 
+> [stm32-cmake](https://github.com/ObKo/stm32-cmake/tree/master) 참고해보면 좋을 듯
+
 ### Step 1 : 빌드 환경 만들기
 1. [STM32CubeF4](https://github.com/STMicroelectronics/STM32CubeF4) 레포지토리 클론하기  
 2. [arm.toolchain](arm.toolchain) 크로스 컴파일러 설정하기
@@ -42,4 +44,108 @@ Build 중 Device 선택 안됨 FLAG 설정 필요
 ### step 7 : 빌드 플래그 설정
 1. 일단 적용 후 수정 예정
 2. [Linker Script Template](STM32CubeF4/Projects/STM32F446ZE-Nucleo/Templates/STM32CubeIDE/STM32F446ZETX_FLASH.ld) 가져오기
-3. Linker Script 수정
+3. [arm.toolchain](arm.toolchain) FLAG 정리
+
+### step 8 : 다시 빌드 : LINKER SCRIPT ERROR
+```
+[2/2 100% :: 0.205] Linking C executable STM32F4
+FAILED: STM32F4 
+: && /usr/bin/arm-none-eabi-gcc -g -Wl,--start-group -lc -lm -lstdc++ -Wl,--end-group -Wl,--print-memory-usage -T/home/jj/ws/personal/stm32/f4/Core/Config/FLASH.ld -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections CMakeFiles/STM32F4.dir/Core/Src/main.c.obj -o STM32F4   && :
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld:/home/jj/ws/personal/stm32/f4/Core/Config/FLASH.ld:88: non constant or forward reference address expression for section .ARM.extab
+collect2: error: ld returned 1 exit status
+```
+
+링킹 에러가 나서 찾아보니
+
+```
+.ARM.extab (READONLY) : /* The READONLY keyword is only supported in GCC11 and later, remove it if using GCC10 or earlier. */
+```
+
+gcc/arm-none-eabi/10.3.1을 쓰고 있음으로 (READONLY) 제거
+
+
+### step 9 : 다시 빌드 : RESET_HANDLER
+```
+[2/2 100% :: 0.459] Linking C executable STM32F4
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008000000
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B       128 KB      1.20%
+             ROM:         168 B       512 KB      0.03%
+build finished with warning(s).
+```
+
+엔트리 심볼을 찾을 수 없다고 한다.
+[CMakeLists.txt](CMakeLists.txt)[28]에 startup script를 추가해준다.
+
+
+### step 10 : 다시 빌드 : main.c 에러
+```
+[3/3 100% :: 0.284] Linking C executable STM32F4
+FAILED: STM32F4 
+: && /usr/bin/arm-none-eabi-gcc -g -Wl,--start-group -lc -lm -lstdc++ -Wl,--end-group -Wl,--print-memory-usage -T/home/jj/ws/personal/stm32/f4/Core/Config/FLASH.ld -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections CMakeFiles/STM32F4.dir/Core/Src/main.c.obj CMakeFiles/STM32F4.dir/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s.obj -o STM32F4   && :
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: CMakeFiles/STM32F4.dir/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s.obj: in function `Reset_Handler':
+/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s:64: undefined reference to `SystemInit'
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s:100: undefined reference to `main'
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B       128 KB      1.20%
+             ROM:         832 B       512 KB      0.16%
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+build finished with error(s).
+```
+
+main.c에서 main, system init 같은 함수가 없어서 생기는 문제이다. "stm32f4xx_hal.h"는 잘 들어간 것 같다.
+
+
+### step 11 : main.c와 system_stm32f4xx.c 작성
+1. [main.c](Core/Src/main.c)에 main 함수 추가 및 HAL_init() 추가  
+2. [system_stm32f4xx.c](STM32CubeF4/Projects/STM32F446ZE-Nucleo/Templates/Src/system_stm32f4xx.c)를 [system_stm32f4xx.c](Core/Src/system_stm32f4xx.c)로 복사  
+
+
+### step 12 : 다시 빌드 : Hal_init 에러
+```
+FAILED: STM32F4 
+: && /usr/bin/arm-none-eabi-gcc -g -Wl,--start-group -lc -lm -lstdc++ -Wl,--end-group -Wl,--print-memory-usage -T/home/jj/ws/personal/stm32/f4/Core/Config/FLASH.ld -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections CMakeFiles/STM32F4.dir/Core/Src/main.c.obj CMakeFiles/STM32F4.dir/Core/Src/system_stm32f4xx.c.obj CMakeFiles/STM32F4.dir/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s.obj -o STM32F4   && :
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: CMakeFiles/STM32F4.dir/Core/Src/main.c.obj: in function `main':
+/home/jj/ws/personal/stm32/f4/Core/Src/main.c:5: undefined reference to `HAL_Init'
+```
+
+빌드 인풋을 확인해보니 라이브러리 링킹이 안됨...?
+-> [STM32CubeF4.cmake](STM32CubeF4.cmake) stm32cubef4 라이브러리 INTERFACE -> STATIC으로 변경
+
+
+### step 13 : 다시 빌드 : assert_failed 에러
+```
+FAILED: STM32F4 
+: && /usr/bin/arm-none-eabi-gcc -g -Wl,--start-group -lc -lm -lstdc++ -Wl,--end-group -Wl,--print-memory-usage -T/home/jj/ws/personal/stm32/f4/Core/Config/FLASH.ld -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections CMakeFiles/STM32F4.dir/Core/Src/main.c.obj CMakeFiles/STM32F4.dir/Core/Src/system_stm32f4xx.c.obj CMakeFiles/STM32F4.dir/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f446xx.s.obj -o STM32F4  libstm32cubef4.a && :
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: libstm32cubef4.a(stm32f4xx_hal.c.obj): in function `HAL_SetTickFreq':
+/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c:346: undefined reference to `assert_failed'
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: libstm32cubef4.a(stm32f4xx_hal_cortex.c.obj): in function `HAL_NVIC_SetPriorityGrouping':
+/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c:144: undefined reference to `assert_failed'
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: libstm32cubef4.a(stm32f4xx_hal_cortex.c.obj): in function `HAL_NVIC_SetPriority':
+/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c:168: undefined reference to `assert_failed'
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: /home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c:169: undefined reference to `assert_failed'
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: libstm32cubef4.a(stm32f4xx_hal_cortex.c.obj): in function `HAL_NVIC_EnableIRQ':
+/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c:188: undefined reference to `assert_failed'
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: libstm32cubef4.a(stm32f4xx_hal_cortex.c.obj):/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c:204: more undefined references to `assert_failed' follow
+```
+
+void assert_failed에 대한 함수 만들어줌
+
+
+### step 14 : 클럭 활성화
+1. HAL_init을 실행 해도 클럭을 활성화 하지 않으면 프로그램이 시작 되지 않는다.
+2. [main.c](STM32CubeF4/Projects/STM32F446ZE-Nucleo/Templates/Src/main.c)에서 SystemClock_config 참고
+3. [main.c](Core/Src/main.c)에 작성
+
+```
+[97/98  98% :: 2.718] Linking C static library libstm32cubef4.a
+[98/98 100% :: 2.810] Linking C executable STM32F4
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1584 B       128 KB      1.21%
+             ROM:        8056 B       512 KB      1.54%
+build finished with warning(s).
+```
+> 여기서 나오는 warning은 LL 드라이버를 활성화 하지 않아서 발생하는 문제. HAL 드라이버만 사용 할 것으로 무시
+
+### END
