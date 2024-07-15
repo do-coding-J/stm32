@@ -1,17 +1,20 @@
 #include "main.h"
 
-void SysTick_Handler(void)
-{
-  HAL_IncTick();
-}
+static void Error_Handler(void);
+static void SystemClock_Config(void);
 
-static void Error_Handler(void)
+int main(void)
 {
+    HAL_Init();
+    SystemClock_Config();
+
     while (1)
     {
         /* code */
     }
+    return 0;
 }
+
 
 static void SystemClock_Config(void)
 {
@@ -55,17 +58,15 @@ static void SystemClock_Config(void)
     }
 }
 
-int main(void)
-{
-    HAL_Init();
-    SystemClock_Config();
 
+static void Error_Handler(void)
+{
     while (1)
     {
         /* code */
     }
-    return 0;
 }
+
 
 #ifdef USE_FULL_ASSERT
 

@@ -192,3 +192,8 @@ LiveGDB: Program stopped, probably due to a reset and/or halt issued by debugger
 
 
 ### step 18 : main()까지 가는 길 검토하기
+1. __libc_init_array에서 터진다 
+2. libc 는 c 라이브러리
+3. 여러가지 수정 후... [FLAG 중](arm.toolchain) --specs=nano.specs -> --specs=nosys.specs 변경하니 main을 찾을 수 있었다.
+
+### END

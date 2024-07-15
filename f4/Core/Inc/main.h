@@ -3,6 +3,4 @@
 
 #include "stm32f4xx_hal.h"
 
-void SysTick_Handler(void);
-
 #endif /*__MAIN_H_*/

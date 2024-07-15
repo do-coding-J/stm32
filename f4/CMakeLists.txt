@@ -33,6 +33,10 @@ add_executable(${PROJECT_NAME} ${MAIN_SRC} ${CMSIS_SRC})
 target_link_libraries(${PROJECT_NAME} PUBLIC stm32cubef4)
 target_include_directories(${PROJECT_NAME} PUBLIC ${MAIN_PATH}/Inc)
 
+target_compile_definitions(${PROJECT_NAME} PUBLIC ${MCU_MODEL_U})
+target_compile_options(${PROJECT_NAME} PUBLIC ${MCU_PARAM} --verbose ${COMPILE_FLAG} ${ARM_FLAG})
+target_link_options(${PROJECT_NAME} PUBLIC ${MCU_PARAM} ${LINK_FLAG} -T${MCU_LINKER_SCRIPT})
+
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_OBJCOPY} -O binary $<TARGET_FILE:${PROJECT_NAME}>
     ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${PROJECT_NAME}.bin)
