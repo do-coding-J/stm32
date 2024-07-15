@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "STM32F4"
+			"path" : "STM32F4.elf"
 		}
 	],
 	"backtrace" : 1,
@@ -340,7 +340,7 @@
 		"language" : "C"
 	},
 	"name" : "STM32F4",
-	"nameOnDisk" : "STM32F4",
+	"nameOnDisk" : "STM32F4.elf",
 	"paths" : 
 	{
 		"build" : ".",

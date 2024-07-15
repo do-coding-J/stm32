@@ -148,4 +148,12 @@ build finished with warning(s).
 ```
 > 여기서 나오는 warning은 LL 드라이버를 활성화 하지 않아서 발생하는 문제. HAL 드라이버만 사용 할 것으로 무시
 
+### step 15 : OUTPUT 설정
+1. 다시 보니 output이 .elf 또는 .bin 파일이 아니라 설정 해주기
+2. [arm.toolchain](arm.toolchain)[25] CMAKE_EXECUTABLE_SUFFIX [CMakeLists.txt](CMakeLists.txt)[27]로 이동
+3. [CMakeLists.txt](CMakeLists.txt)[36:38]에 output을 .bin으로 바꿔주는 커스텀 커맨드 추가
+
+### step 16 : uploading sh file
+1. 업로드 가능한 [upload.sh](upload.sh) 작성
+
 ### END

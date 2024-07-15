@@ -1166,18 +1166,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "HAL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "HAL-NOTFOUND"
-		},
-		{
 			"name" : "STM32F4_BINARY_DIR",
 			"properties" : 
 			[
@@ -1212,18 +1200,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/jj/ws/personal/stm32/f4"
-		},
-		{
-			"name" : "stm32cubef4",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "stm32cubef4-NOTFOUND"
 		}
 	],
 	"kind" : "cache",

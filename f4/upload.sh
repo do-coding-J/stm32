@@ -1,0 +1,1 @@
+st-flash write build/STM32F4.bin 0x08000000

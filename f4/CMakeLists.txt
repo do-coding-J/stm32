@@ -5,6 +5,7 @@ include(arm.toolchain)
 
 project(STM32F4)
 enable_language(C CXX ASM)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/build)
 
 # Dev setting
 set(MCU_FAMILY STM32F4xx)
@@ -22,9 +23,8 @@ set(MCU_LINKER_SCRIPT ${MAIN_PATH}/Config/FLASH.ld)
 # lib include
 include(STM32CubeF4.cmake)
 
-find_library(HAL stm32cubef4)
-
-message("${HAL}")
+# output configuration
+set(CMAKE_EXECUTABLE_SUFFIX ".elf")
 
 # main source
 file(GLOB_RECURSE MAIN_SRC ${MAIN_PATH}/Src/*.c)
@@ -32,3 +32,7 @@ file(GLOB_RECURSE MAIN_SRC ${MAIN_PATH}/Src/*.c)
 add_executable(${PROJECT_NAME} ${MAIN_SRC} ${CMSIS_SRC})
 target_link_libraries(${PROJECT_NAME} PUBLIC stm32cubef4)
 target_include_directories(${PROJECT_NAME} PUBLIC ${MAIN_PATH}/Inc)
+
+add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_OBJCOPY} -O binary $<TARGET_FILE:${PROJECT_NAME}>
+    ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${PROJECT_NAME}.bin)
