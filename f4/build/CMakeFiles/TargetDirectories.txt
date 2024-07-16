@@ -2,3 +2,11 @@
 /home/jj/ws/personal/stm32/f4/build/CMakeFiles/STM32F4.dir
 /home/jj/ws/personal/stm32/f4/build/CMakeFiles/edit_cache.dir
 /home/jj/ws/personal/stm32/f4/build/CMakeFiles/rebuild_cache.dir
+/home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+/home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source/CMakeFiles/edit_cache.dir
+/home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source/CMakeFiles/rebuild_cache.dir
+/home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source/include/CMakeFiles/edit_cache.dir
+/home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source/include/CMakeFiles/rebuild_cache.dir
+/home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir
+/home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source/portable/CMakeFiles/edit_cache.dir
+/home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source/portable/CMakeFiles/rebuild_cache.dir

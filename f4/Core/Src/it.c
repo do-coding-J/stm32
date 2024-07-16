@@ -1,6 +1,8 @@
 #include "main.h"
 #include "it.h"
 
+// extern SemaphoreHandle_t xTestSemaphore;
+
 void NMI_Handler(void)
 {
 
@@ -135,7 +137,13 @@ void CAN1_SCE_IRQHandler(void)
 }
 void EXTI9_5_IRQHandler(void)
 {
+    // long lHigherPriorityTaskWoken = pdFALSE;
 
+    // // HAL_EXTI_ClearPending()
+
+    // xSemaphoreGiveFromISR(xTestSemaphore, &lHigherPriorityTaskWoken);
+
+    // portEND_SWITCHING_ISR(lHigherPriorityTaskWoken);
 }
 void TIM1_BRK_TIM9_IRQHandler(void)
 {

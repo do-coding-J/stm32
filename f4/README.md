@@ -196,4 +196,71 @@ LiveGDB: Program stopped, probably due to a reset and/or halt issued by debugger
 2. libc 는 c 라이브러리
 3. 여러가지 수정 후... [FLAG 중](arm.toolchain) --specs=nano.specs -> --specs=nosys.specs 변경하니 main을 찾을 수 있었다.
 
-### END
+
+---
+## STM32의 IO를 이용한 기능 작성하기
+
+### step 1 : 이전 작업 불러오기  
+1. 빌드가 잘 되는지 확인
+2. 디버깅 모드로 uwTick이 잘 올라가는지 확인 한다.
+
+### GPIO LED 사용
+
+#### step 1 : 사용 할 핀 정하기
+1. GPO와 GPI를 사용 해 볼 것이기 때문에 데이터 시트에서 LED와 Btn에 대한 정보를 가져온다.
+2. LED는 [Green, Blue, Red] 순서로 [PB0, PB7, PB14]
+3. Btn은 B1 PC13 이다.
+
+#### step 2 : 핀 정의
+1. [gpio_pin_defs.h](Core/Inc/gpio_pin_defs.h)에 핀 정의 하기
+2. [gpio.c](Core/Src/gpio.c)에 GPIO_Init 함수 작성하기
+
+#### step 3 : 빌드 후 확인
+1. 이상 없음!
+
+
+### GPIO Btn(B1) 사용
+
+#### step 1 : 핀 정의
+1. LED는 output이고 B1은 input이기 때문에 다른 설정으로 적용한다.
+2. [gpio.c](Core/Src/gpio.c)에 poll 방식으로 코드 작성
+3. [main.c](Core/Src/main.c)에 if 문으로 동작 방식을 정하고 빌드
+
+### step 2 : 빌드 후 확인
+1. 버튼 누르면 LED 동작
+2. 버튼 누르면 LED 꺼짐, 원활한 동작을 위해 버튼 동작시 딜레이 추가
+
+
+
+
+---
+## RTOS 포팅
+
+### Step 1 : FreeRTOS 다운받기
+1. git clone
+2. submodule init & update
+
+### Step 2 : [FreeRTOS.cmake](./FreeRTOS.cmake) 작성
+1. [FreeRTOS CMakeLists.txt](FreeRTOS/FreeRTOS/Source/CMakeLists.txt)를 보면 몇가지 설정 해야 한다고 적혀있다.
+2. FREERTOS_PORT option
+3. freertos_config library target
+4. [FreeRTOSConfig.h](Core/Config/FreeRTOSConfig.h) 생성하고
+5. [CMakeLists.txt](./CMakeLists.txt)에 include 하고 일단 빌드하면 에러 메세지로 친절하게 설명해준다.
+
+### step 3 : [FreeRTOS.cmake](./FreeRTOS.cmake) 수정
+1. add_library(freertos_config INTERFACE) 를 작성하고
+2. set(FREERTOS_PORT ${RTOS_PORT}) 작성하고, set(RTOS_PORT GCC_ARM_CM4F) [CMakeLists.txt](./CMakeLists.txt)에 작성한다.
+3. 추가로 set(FREERTOS_HEAP 4)를 통해 heap4.c를 쓴다고 명시해주고 빌드
+
+### step 4 : SystemCoreClock
+1. SystemCoreClock 가 안불러와진다.
+2. [FreeRTOSConfig.h](Core/Config/FreeRTOSConfig.h) 에 그냥 명시해줬다.
+
+### step 5 : assembler error
+1. Compile Flag와 Link Flag 그리고 Linker Script 추가해줬다.
+
+### step 6 : main.h에 추가
+1. #include "FreeRTOS.h"를 해보자
+
+## END
+
