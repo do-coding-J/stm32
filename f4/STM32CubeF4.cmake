@@ -16,5 +16,5 @@ add_library(stm32cubef4 STATIC ${HAL_SRC})
 target_include_directories(stm32cubef4 PUBLIC ${HAL_INC} ${CMSIS_INC} ${HAL_CFG_PATH})
 
 target_compile_definitions(stm32cubef4 PUBLIC ${MCU_MODEL_U})
-target_compile_options(stm32cubef4 PUBLIC ${MCU_PARAM} --verbose ${COMPILE_FLAG} ${ARM_FLAG})
+target_compile_options(stm32cubef4 PUBLIC ${MCU_PARAM} ${COMPILE_FLAG} --verbose)
 target_link_options(stm32cubef4 PUBLIC ${MCU_PARAM} ${LINK_FLAG} -T${MCU_LINKER_SCRIPT})

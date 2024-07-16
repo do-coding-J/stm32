@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "STM32F4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-STM32F4-Debug-3356295e6b97959f7227.json",
+					"jsonFile" : "target-STM32F4-Debug-a1d329e07337238461ae.json",
 					"name" : "STM32F4",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "stm32cubef4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-stm32cubef4-Debug-eb1e82626cf25ae5b94c.json",
+					"jsonFile" : "target-stm32cubef4-Debug-e1093b248c5573588242.json",
 					"name" : "stm32cubef4",
 					"projectIndex" : 0
 				}

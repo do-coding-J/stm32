@@ -90,7 +90,19 @@
 				},
 				{
 					"backtrace" : 4,
-					"fragment" : "--verbose"
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "--specs=nosys.specs"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wl,--gc-sections"
 				},
 				{
 					"backtrace" : 4,
@@ -99,10 +111,6 @@
 				{
 					"backtrace" : 4,
 					"fragment" : "-Wextra"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-Wpedantic"
 				},
 				{
 					"backtrace" : 4,
@@ -126,19 +134,7 @@
 				},
 				{
 					"backtrace" : 4,
-					"fragment" : "-fdata-sections"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-ffunction-sections"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "--specs=nosys.specs"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-Wl,--gc-sections"
+					"fragment" : "--verbose"
 				}
 			],
 			"defines" : 
@@ -210,7 +206,19 @@
 				},
 				{
 					"backtrace" : 4,
-					"fragment" : "--verbose"
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "--specs=nosys.specs"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wl,--gc-sections"
 				},
 				{
 					"backtrace" : 4,
@@ -219,10 +227,6 @@
 				{
 					"backtrace" : 4,
 					"fragment" : "-Wextra"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-Wpedantic"
 				},
 				{
 					"backtrace" : 4,
@@ -246,19 +250,7 @@
 				},
 				{
 					"backtrace" : 4,
-					"fragment" : "-fdata-sections"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-ffunction-sections"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "--specs=nosys.specs"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-Wl,--gc-sections"
+					"fragment" : "--verbose"
 				}
 			],
 			"defines" : 
@@ -340,6 +332,26 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "-mfloat-abi=softfp",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fdata-sections",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-ffunction-sections",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--specs=nosys.specs",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-Wl,--gc-sections",
 				"role" : "flags"
 			},
 			{

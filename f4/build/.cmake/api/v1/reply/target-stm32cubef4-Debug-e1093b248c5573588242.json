@@ -89,7 +89,19 @@
 				},
 				{
 					"backtrace" : 4,
-					"fragment" : "--verbose"
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "--specs=nosys.specs"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wl,--gc-sections"
 				},
 				{
 					"backtrace" : 4,
@@ -98,10 +110,6 @@
 				{
 					"backtrace" : 4,
 					"fragment" : "-Wextra"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-Wpedantic"
 				},
 				{
 					"backtrace" : 4,
@@ -125,19 +133,7 @@
 				},
 				{
 					"backtrace" : 4,
-					"fragment" : "-fdata-sections"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-ffunction-sections"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "--specs=nosys.specs"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-Wl,--gc-sections"
+					"fragment" : "--verbose"
 				}
 			],
 			"defines" : 

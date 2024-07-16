@@ -34,7 +34,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC stm32cubef4)
 target_include_directories(${PROJECT_NAME} PUBLIC ${MAIN_PATH}/Inc)
 
 target_compile_definitions(${PROJECT_NAME} PUBLIC ${MCU_MODEL_U})
-target_compile_options(${PROJECT_NAME} PUBLIC ${MCU_PARAM} --verbose ${COMPILE_FLAG} ${ARM_FLAG})
+target_compile_options(${PROJECT_NAME} PUBLIC ${MCU_PARAM} ${COMPILE_FLAG} --verbose)
 target_link_options(${PROJECT_NAME} PUBLIC ${MCU_PARAM} ${LINK_FLAG} -T${MCU_LINKER_SCRIPT})
 
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD

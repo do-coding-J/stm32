@@ -27,9 +27,9 @@ set(ARM_FLAG
     -fno-threadsafe-statics>)
 
 set(COMPILE_FLAG
+    ${ARM_FLAG}
     -Wall
     -Wextra
-    -Wpedantic
     -Wno-unused-parameter
     -Wno-binary-constants
     $<$<COMPILE_LANGUAGE:CXX>:
@@ -43,5 +43,5 @@ set(COMPILE_FLAG
     $<$<CONFIG:Release>:-Og
     -g0>)
 
-set(LINK_FLAG -Wl,--start-group -lc -lm -lstdc++ -Wl,--end-group
+set(LINK_FLAG ${ARM_FLAG} -Wl,--start-group -lc -lm -lstdc++ -Wl,--end-group
               -Wl,--print-memory-usage)
