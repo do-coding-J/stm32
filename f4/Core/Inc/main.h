@@ -6,19 +6,15 @@
 
 // lib include
 #include "stm32f4xx_hal.h" 
-#include "FreeRTOS.h"
+// #include "FreeRTOS.h"
 
 // freertos include
-#include "task.h"
-#include "timers.h"
-#include "semphr.h"
+// #include "task.h"
+// #include "timers.h"
+// #include "semphr.h"
 
 // hardware include
-#include "gpio_pin_defs.h"
-
-// functions
-static void Error_Handler(void);
-static void SystemClock_Config(void);
-
+#include "gpio_defs.h"
+#include "tim_defs.h"
 
 #endif /*__MAIN_H_*/

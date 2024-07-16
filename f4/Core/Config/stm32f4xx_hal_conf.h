@@ -64,7 +64,7 @@
 /* #define HAL_SAI_MODULE_ENABLED    */
 #define HAL_SD_MODULE_ENABLED               // sd card module
 #define HAL_SPI_MODULE_ENABLED              // serial peripheral interface
-/* #define HAL_TIM_MODULE_ENABLED    */
+#define HAL_TIM_MODULE_ENABLED              // timer module 
 #define HAL_UART_MODULE_ENABLED             // universal asyncronous receive transmit
 #define HAL_USART_MODULE_ENABLED            // universal syncronous asyncronous receive transmit
 /* #define HAL_IRDA_MODULE_ENABLED  */

@@ -262,5 +262,50 @@ LiveGDB: Program stopped, probably due to a reset and/or halt issued by debugger
 ### step 6 : main.h에 추가
 1. #include "FreeRTOS.h"를 해보자
 
-## END
 
+
+---
+## EXTI 사용하기
+
+### step 1 : RTOS 제외
+1. RTOS를 빌드에서 제외하고 진행
+
+### step 2 : 버튼에 Exti 적용하기
+1. [gpio.c](./Core/Src/gpio.c)의 버튼에 해당하는 부분 핀 모드 변경 및 인터럽트 우선순위 설정
+2. [it.c](./Core/Src/it.c)에서 버튼핀(PB13)에 해당하는 부분에 핸들러 연결
+3. [main.c](./Core/Src/main.c)에 핸들러 콜백 함수 생성
+
+### step 3 : 빌드 & 테스트
+1. 이전에 delay 넣었을 때보다 반응이 좋다.
+
+
+---
+## Timer 사용하기
+
+### TIM Base
+
+#### step 1 : 헤더와 c파일 만들기
+1. [tim_defs.h](./Core/Inc/tim_defs.h)를 만들고 설정에 필요한 값을 적어준다.
+2. [tim.c](./Core/Src/tim.c)에 설정을 사용할 TIM_Init() 함수를 만든다.
+3. TIM6를 사용 할 것이니 RCC CLK를 Enable 해주고
+4. Instance는 TIM6로 한다.
+5. ARR을 100-1 로 고정해놓는다.
+6. PSC는 시스템 클럭 / (타겟 클럭 * ARR) 로 계산한다.
+7. 기타 설정은 TIM_HandleTypeDef 가 기술 되어있는 [stm32f4xx_hal_tim.h](STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)[331:380]에 있다
+8. Init과 Start 함수까지 포함해준다.
+
+#### step 2 : main.h / main.c
+1. [tim_defs.h](./Core/Inc/tim_defs.h)를 [main.h](./Core/Inc/main.h)에 추가해준다.
+2. [main.c](/Core/Src/main.c)의 main() 함수에 TIM_Init을 추가해준다.
+3. 확인을 위해 TIM6->CNT 가 0이 될 때마다 LED_BLUE를 토글 해줬다.
+4. 토클 되는데 10초가 걸린다...? / 버튼 LED가 동작 할 때면 10초가 걸린다?
+
+
+---
+
+## RTOS Task 만들기
+
+### step 1 : RTOS 빌드에 추가
+1. [CMakeLists.txt](./CMakeLists.txt)에서 RTOS 추가
+2. [main.h](./Core/Inc/main.h) 헤더 추가
+3. 빌드 하고 확인

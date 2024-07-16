@@ -1,17 +1,52 @@
 #include "main.h"
 
+static void Error_Handler(void);
+static void SystemClock_Config(void);
+
+bool sig = false;
+extern TIM_HandleTypeDef timer6;
+
 int main(void)
 {
     HAL_Init();
     SystemClock_Config();
 
     GPIO_Init();
-
+    TIM_Init();
 
     while (1)
     {
+        if (sig)
+        {
+            HAL_GPIO_TogglePin(GREEN_PORT, GREEN_PIN);
+            HAL_Delay(100);
+            // HAL_GPIO_TogglePin(BLUE_PORT, BLUE_PIN);
+            // HAL_Delay(100);
+            // HAL_GPIO_TogglePin(RED_PORT, RED_PIN);
+            // HAL_Delay(100);
+        }
+        else
+        {
+            HAL_GPIO_WritePin(GREEN_PORT, GREEN_PIN, GPIO_PIN_RESET);
+            // HAL_GPIO_WritePin(BLUE_PORT, BLUE_PIN, GPIO_PIN_RESET);
+            // HAL_GPIO_WritePin(RED_PORT, RED_PIN, GPIO_PIN_RESET);
+        }
+
+        if(timer6.Instance->CNT == 0)
+        {
+            HAL_GPIO_TogglePin(BLUE_PORT, BLUE_PIN);
+        }
+        
     }
     return 0;
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+    if(GPIO_Pin == B1_PIN)
+    {
+        sig = !sig;
+    }
 }
 
 static void SystemClock_Config(void)

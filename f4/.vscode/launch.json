@@ -16,7 +16,7 @@
             "showDevDebugOutput": "raw",
             "liveWatch": {
                 "enabled": true,
-                "samplesPerSecond": 4
+                "samplesPerSecond": 20
             }
         }
     ]
