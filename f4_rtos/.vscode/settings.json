@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "stm32f4xx_hal.h": "c",
+        "main.h": "c",
+        "stm32f4xx_hal_conf.h": "c",
+        "stm32f4xx_nucleo_144.h": "c",
+        "stm32f446xx.h": "c",
+        "semphr.h": "c",
+        "freertos.h": "c",
+        "freertosconfig.h": "c"
+    }
+}

@@ -1,0 +1,138 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"build" : "FreeRTOS/FreeRTOS/Source",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"jsonFile" : "directory-FreeRTOS.FreeRTOS.Source-Debug-1329d7ff4fda63bed837.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "FreeRTOS/FreeRTOS/Source",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "FreeRTOS/FreeRTOS/Source/include",
+					"jsonFile" : "directory-FreeRTOS.FreeRTOS.Source.include-Debug-a4855e618bde1df033b6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "FreeRTOS/FreeRTOS/Source/include"
+				},
+				{
+					"build" : "FreeRTOS/FreeRTOS/Source/portable",
+					"jsonFile" : "directory-FreeRTOS.FreeRTOS.Source.portable-Debug-34e5d3b0753b31d54a73.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "FreeRTOS/FreeRTOS/Source/portable",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "STM32F4",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "STM32F4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-STM32F4-Debug-8350b0e15bf05c5ceda9.json",
+					"name" : "STM32F4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "freertos_kernel::@0baddbaf77349addf1d5",
+					"jsonFile" : "target-freertos_kernel-Debug-297fd2d1212c737aa1fd.json",
+					"name" : "freertos_kernel",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "freertos_kernel_port::@156fc54a245571f33027",
+					"jsonFile" : "target-freertos_kernel_port-Debug-e1f13a5d712880fb2acb.json",
+					"name" : "freertos_kernel_port",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stm32cubef4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stm32cubef4-Debug-9da66657ec26ad3d269f.json",
+					"name" : "stm32cubef4",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jj/ws/personal/stm32/f4_rtos/build",
+		"source" : "/home/jj/ws/personal/stm32/f4_rtos"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
