@@ -1,11 +1,42 @@
 #include "main.h"
 
-static void Error_Handler(void)
+static void Error_Handler(void);
+static void SystemClock_Config(void);
+
+int main(void)
 {
+    HAL_Init();
+    SystemClock_Config();
+
+    GPIO_Init();
+
+    bool sig = false;
+
     while (1)
     {
-        /* code */
+        if(HAL_GPIO_ReadPin(B1_PORT, B1_PIN) == GPIO_PIN_SET)
+        {
+            sig = !sig;
+            HAL_Delay(500);
+        }
+
+        if(sig)
+        {
+            HAL_GPIO_TogglePin(GREEN_PORT, GREEN_PIN);
+            HAL_Delay(100);
+            HAL_GPIO_TogglePin(BLUE_PORT, BLUE_PIN);
+            HAL_Delay(100);
+            HAL_GPIO_TogglePin(RED_PORT, RED_PIN);
+            HAL_Delay(100);
+        }
+        else
+        {
+            HAL_GPIO_WritePin(GREEN_PORT, GREEN_PIN, GPIO_PIN_RESET);
+            HAL_GPIO_WritePin(BLUE_PORT, BLUE_PIN, GPIO_PIN_RESET);
+            HAL_GPIO_WritePin(RED_PORT, RED_PIN, GPIO_PIN_RESET);
+        }
     }
+    return 0;
 }
 
 static void SystemClock_Config(void)
@@ -50,36 +81,12 @@ static void SystemClock_Config(void)
     }
 }
 
-void gpio_init(void)
+static void Error_Handler(void)
 {
-    GPIO_InitTypeDef gpio_init;
-
-    // LEDs
-    gpio_init.Pin = LED_GREEN_Pin | LED_BLUE_Pin | LED_RED_Pin;
-    gpio_init.Mode = GPIO_MODE_OUTPUT_PP;
-    gpio_init.Pull = GPIO_NOPULL;
-    gpio_init.Speed = GPIO_SPEED_FREQ_LOW;
-    HAL_GPIO_Init(GPIOB, &gpio_init);
-}
-
-int main(void)
-{
-    HAL_Init();
-    SystemClock_Config();
-
-    gpio_init();
-
     while (1)
     {
         /* code */
-        HAL_GPIO_TogglePin(LED_GREEN_Port, LED_GREEN_Pin);
-        HAL_Delay(100);
-        HAL_GPIO_TogglePin(LED_BLUE_Port, LED_BLUE_Pin);
-        HAL_Delay(100);
-        HAL_GPIO_TogglePin(LED_RED_Port, LED_RED_Pin);
-        HAL_Delay(100);
     }
-    return 0;
 }
 
 #ifdef USE_FULL_ASSERT

@@ -27,11 +27,15 @@ include(STM32CubeF4.cmake)
 set(CMAKE_EXECUTABLE_SUFFIX ".elf")
 
 # main source
-file(GLOB_RECURSE MAIN_SRC ${MAIN_PATH}/Src/*.c)
+file(GLOB_RECURSE MAIN_SRC ${MAIN_PATH}/Src/*.c ${MAIN_PATH}/Config/*.c)
 
 add_executable(${PROJECT_NAME} ${MAIN_SRC} ${CMSIS_SRC})
 target_link_libraries(${PROJECT_NAME} PUBLIC stm32cubef4)
 target_include_directories(${PROJECT_NAME} PUBLIC ${MAIN_PATH}/Inc)
+
+target_compile_definitions(${PROJECT_NAME} PUBLIC ${MCU_MODEL_U})
+target_compile_options(${PROJECT_NAME} PUBLIC ${MCU_PARAM} ${COMPILE_FLAG} --verbose)
+target_link_options(${PROJECT_NAME} PUBLIC ${MCU_PARAM} ${LINK_FLAG} -T${MCU_LINKER_SCRIPT})
 
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_OBJCOPY} -O binary $<TARGET_FILE:${PROJECT_NAME}>

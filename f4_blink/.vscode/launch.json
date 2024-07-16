@@ -12,6 +12,8 @@
             "type": "cortex-debug",
             "runToEntryPoint": "main",
             "servertype": "stlink",
+            "showDevDebugTimestamps": true,
+            "showDevDebugOutput": "raw",
             "liveWatch": {
                 "enabled": true,
                 "samplesPerSecond": 4
