@@ -4,3 +4,9 @@
 [submodule "f4_blink/STM32CubeF4"]
 	path = f4_blink/STM32CubeF4
 	url = git@github.com:STMicroelectronics/STM32CubeF4.git
+[submodule "f4_rtos/STM32CubeF4"]
+	path = f4_rtos/STM32CubeF4
+	url = git@github.com:STMicroelectronics/STM32CubeF4.git
+[submodule "f4_rtos/FreeRTOS"]
+	path = f4_rtos/FreeRTOS
+	url = git@github.com:FreeRTOS/FreeRTOS.git
