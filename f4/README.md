@@ -296,10 +296,24 @@ LiveGDB: Program stopped, probably due to a reset and/or halt issued by debugger
 
 #### step 2 : main.h / main.c
 1. [tim_defs.h](./Core/Inc/tim_defs.h)를 [main.h](./Core/Inc/main.h)에 추가해준다.
-2. [main.c](/Core/Src/main.c)의 main() 함수에 TIM_Init을 추가해준다.
+2. [main.c](/Core/Src/main.c)의 main() 함수에 TIM_Init의 Instance와 Init을 추가해준다.
 3. 확인을 위해 TIM6->CNT 가 0이 될 때마다 LED_BLUE를 토글 해줬다.
 4. 토클 되는데 10초가 걸린다...? / 버튼 LED가 동작 할 때면 10초가 걸린다?
 
+### TIM Base IT
+
+#### step 1 : 코드 수정
+1. [tim.c](Core/Src/tim.c) HAL_TIM_Base_Start 대신 HAL_TIM_Base_Start_IT을 사용한다.
+2. [tim.c](Core/Src/tim.c) IT을 사용 할 것이기 때문에 타이머에 해당 되는 인터럽트의 순위를 설정해주고 시작한다.
+3. [it.c](Core/Src/it.c)에 타이머에 대항 되는 부분에 HAL_TIM_IRQHandler를 호출해준다.
+4. [main.c](Core/Src/main.c)에 인터럽트 콜백을 설정해준다. 타이머가 오버플로우 되어 초기화 될 때 발생하는 인터럽트
+5. 클럭이 너무 빨라 정확하지 않았던 LED_BLUE를 인터럽트 콜백 안으로 옮겨준다.
+
+#### step 2 : 결과 확인
+1. 0.1 초 간격으로 LED가 잘 반짝인다. 인터럽트를 사용하였기 때문에 이전 코드 때문에 밀리는 현상이 발생하지 않는다.
+
+
+### TODO : 기타 타이머 추가 하기
 
 ---
 
@@ -309,3 +323,4 @@ LiveGDB: Program stopped, probably due to a reset and/or halt issued by debugger
 1. [CMakeLists.txt](./CMakeLists.txt)에서 RTOS 추가
 2. [main.h](./Core/Inc/main.h) 헤더 추가
 3. 빌드 하고 확인
+

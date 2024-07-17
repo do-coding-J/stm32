@@ -2,6 +2,7 @@
 #include "it.h"
 
 // extern SemaphoreHandle_t xTestSemaphore;
+extern TIM_HandleTypeDef timer6;
 
 void NMI_Handler(void)
 {
@@ -209,6 +210,7 @@ void UART5_IRQHandler(void)
 }
 void TIM6_DAC_IRQHandler(void)
 {
+    HAL_TIM_IRQHandler(&timer6);
 }
 void TIM7_IRQHandler(void)
 {

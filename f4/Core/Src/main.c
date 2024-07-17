@@ -6,6 +6,7 @@ static void SystemClock_Config(void);
 bool sig = false;
 extern TIM_HandleTypeDef timer6;
 
+
 int main(void)
 {
     HAL_Init();
@@ -32,10 +33,10 @@ int main(void)
             // HAL_GPIO_WritePin(RED_PORT, RED_PIN, GPIO_PIN_RESET);
         }
 
-        if(timer6.Instance->CNT == 0)
-        {
-            HAL_GPIO_TogglePin(BLUE_PORT, BLUE_PIN);
-        }
+        // if(timer6.Instance->CNT > (timer6.Instance->ARR * 0.9))
+        // {
+        //     HAL_GPIO_TogglePin(BLUE_PORT, BLUE_PIN);
+        // }
         
     }
     return 0;
@@ -49,6 +50,39 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     }
 }
 
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+    if(htim == &timer6)
+    {
+        HAL_GPIO_TogglePin(BLUE_PORT, BLUE_PIN);
+    }
+}
+
+
+/**
+  * @brief  System Clock Configuration
+  *         The system Clock is configured as follow : 
+  *            System Clock source            = PLL (HSE)
+  *            SYSCLK(Hz)                     = 180000000
+  *            HCLK(Hz)                       = 180000000
+  *            AHB Prescaler                  = 1
+  *            APB1 Prescaler                 = 4
+  *            APB2 Prescaler                 = 2
+  *            HSE Frequency(Hz)              = 8000000
+  *            PLL_M                          = 8
+  *            PLL_N                          = 360
+  *            PLL_P                          = 2
+  *            PLL_Q                          = 7
+  *            VDD(V)                         = 3.3
+  *            Main regulator output voltage  = Scale1 mode
+  *            Flash Latency(WS)              = 5
+  *         The USB clock configuration from PLLSAI:
+  *            PLLSAIM                        = 8
+  *            PLLSAIN                        = 384
+  *            PLLSAIP                        = 8
+  * @param  None
+  * @retval None
+  */
 static void SystemClock_Config(void)
 {
     RCC_ClkInitTypeDef RCC_ClkInitStruct;
