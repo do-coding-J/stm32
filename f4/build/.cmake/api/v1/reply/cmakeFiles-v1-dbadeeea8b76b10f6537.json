@@ -130,6 +130,18 @@
 		},
 		{
 			"path" : "STM32CubeF4.cmake"
+		},
+		{
+			"path" : "FreeRTOS.cmake"
+		},
+		{
+			"path" : "FreeRTOS/FreeRTOS/Source/CMakeLists.txt"
+		},
+		{
+			"path" : "FreeRTOS/FreeRTOS/Source/include/CMakeLists.txt"
+		},
+		{
+			"path" : "FreeRTOS/FreeRTOS/Source/portable/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

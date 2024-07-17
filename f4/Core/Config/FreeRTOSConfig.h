@@ -40,7 +40,7 @@
  * See http://www.freertos.org/a00110.html
  *----------------------------------------------------------*/
 
-#define SystemCoreClock 				16000000					/* get value from system.c */
+#define SystemCoreClock 				180000000					/* get value from system.c */
 
 #define configUSE_PREEMPTION			1
 #define configUSE_IDLE_HOOK				1

@@ -24,7 +24,7 @@ set(MCU_LINKER_SCRIPT ${MAIN_PATH}/Config/FLASH.ld)
 
 # lib include
 include(STM32CubeF4.cmake)
-# include(FreeRTOS.cmake)
+include(FreeRTOS.cmake)
 
 # output configuration
 set(CMAKE_EXECUTABLE_SUFFIX ".elf")
@@ -33,7 +33,7 @@ set(CMAKE_EXECUTABLE_SUFFIX ".elf")
 file(GLOB_RECURSE MAIN_SRC ${MAIN_PATH}/Src/*.c ${MAIN_PATH}/Config/*.c)
 
 add_executable(${PROJECT_NAME} ${MAIN_SRC} ${CMSIS_SRC})
-# target_link_libraries(${PROJECT_NAME} PUBLIC stm32cubef4 freertos_config freertos_kernel)
+target_link_libraries(${PROJECT_NAME} PUBLIC stm32cubef4 freertos_config freertos_kernel)
 target_link_libraries(${PROJECT_NAME} PUBLIC stm32cubef4)
 target_include_directories(${PROJECT_NAME} PUBLIC ${MAIN_PATH}/Inc)
 

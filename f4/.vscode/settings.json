@@ -7,6 +7,8 @@
         "stm32f446xx.h": "c",
         "semphr.h": "c",
         "freertos.h": "c",
-        "freertosconfig.h": "c"
+        "freertosconfig.h": "c",
+        "usr_tasks.h": "c",
+        "stdbool.h": "c"
     }
 }

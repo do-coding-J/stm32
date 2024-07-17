@@ -15,6 +15,11 @@ int main(void)
     GPIO_Init();
     TIM_Init();
 
+    TASK_Init();
+
+
+    vTaskStartScheduler();
+
     while (1)
     {
         if (sig)
@@ -32,11 +37,6 @@ int main(void)
             // HAL_GPIO_WritePin(BLUE_PORT, BLUE_PIN, GPIO_PIN_RESET);
             // HAL_GPIO_WritePin(RED_PORT, RED_PIN, GPIO_PIN_RESET);
         }
-
-        // if(timer6.Instance->CNT > (timer6.Instance->ARR * 0.9))
-        // {
-        //     HAL_GPIO_TogglePin(BLUE_PORT, BLUE_PIN);
-        // }
         
     }
     return 0;

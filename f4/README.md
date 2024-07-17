@@ -324,3 +324,47 @@ LiveGDB: Program stopped, probably due to a reset and/or halt issued by debugger
 2. [main.h](./Core/Inc/main.h) 헤더 추가
 3. 빌드 하고 확인
 
+### step 2 : vTaskStartScheduler() 추가
+1. [main.c](Core/Src/main.c), main()에 vTaskStartScheduler() 추가
+2.  빌드를 하게 되면 LED_GREEN은 동작 하면 안됨
+-> 스케줄러가 들어가게 되면 while문은 동작 안함
+3. 빌드
+```
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a(port.c.obj): in function `SVC_Handler':
+/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c:262: multiple definition of `SVC_Handler'; CMakeFiles/STM32F4.dir/Core/Src/it.c.obj:/home/jj/ws/personal/stm32/f4/Core/Src/it.c:37: first defined here
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a(port.c.obj): in function `PendSV_Handler':
+/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c:509: multiple definition of `PendSV_Handler'; CMakeFiles/STM32F4.dir/Core/Src/it.c.obj:/home/jj/ws/personal/stm32/f4/Core/Src/it.c:43: first defined here
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a(port.c.obj): in function `SysTick_Handler':
+/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c:563: multiple definition of `SysTick_Handler'; CMakeFiles/STM32F4.dir/Core/Src/it.c.obj:/home/jj/ws/personal/stm32/f4/Core/Src/it.c:45: first defined here
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a(tasks.c.obj): in function `prvIdleTask':
+/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/tasks.c:5811: undefined reference to `vApplicationIdleHook'
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a(tasks.c.obj): in function `xTaskIncrementTick':
+/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/tasks.c:4849: undefined reference to `vApplicationTickHook'
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: /home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/tasks.c:4913: undefined reference to `vApplicationTickHook'
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a(tasks.c.obj): in function `vTaskSwitchContext':
+/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/tasks.c:5100: undefined reference to `vApplicationStackOverflowHook'
+/usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a(heap_4.c.obj): in function `pvPortMalloc':
+/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c:334: undefined reference to `vApplicationMallocFailedHook'
+```
+> SVC_Handler, PendSV_Handler, SysTick_Handler 의 multiple definition
+> vApplicationIdleHook, vApplicationTickHook, vApplicationStackOverflowHook, vApplicationMallocFailedHook의 undefined reference
+
+### step 3 : multiple definition
+1. SVC_Handler, PendSV_Handler, SysTick_Handler 이 세가지는 freertos_kernel.a에 정의 되어있다고 한다.
+2. [it.c](Core/Src/it.c)에서 __weak으로 해결
+
+### step 4 : undefined reference
+1. Hook 함수를 추가 해주면 되는데 위에 지운 [it.c](Core/Src/it.c)에 작성
+2. vApplicationStackOverflowHook 와 vApplicationMallocFailedHook 의 경우는 에러처리까지 작성
+3. 빌드 이상 없음 확인
+
+### step 5 : 확인
+1. task가 없는 실행파일, main() 안에 while로 빠지지 않는 것을 보기 위함
+2. 버튼을 눌러 sig변수를 바꿔도 LED_GREEN은 동작하지 않음
+
+### step 6 : task 생성
+1. [uar_tasks.h](./Core/Inc/usr_tasks.h), [uar_tasks.c](Core/Src/usr_tasks.c) 생성
+2. TASK_Init() 함수 생성
+3. RED_LED를 1초마다 토글하는 Task 생성
+
+---

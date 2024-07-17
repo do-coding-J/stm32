@@ -4,6 +4,42 @@
 // extern SemaphoreHandle_t xTestSemaphore;
 extern TIM_HandleTypeDef timer6;
 
+/* baremetal */
+__weak void SVC_Handler(void)
+{
+}
+__weak void PendSV_Handler(void)
+{
+}
+__weak void SysTick_Handler(void)
+{
+    HAL_IncTick();
+}
+/* baremetal end*/
+/* freertos hook function */
+void vApplicationIdleHook(void)
+{
+}
+void vApplicationTickHook(void)
+{
+}
+void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
+{
+    taskDISABLE_INTERRUPTS();
+    while (1)
+    {
+        /* code */
+    }
+}
+void vApplicationMallocFailedHook(void)
+{
+    taskDISABLE_INTERRUPTS();
+    while (1)
+    {
+        /* code */
+    }
+}
+/* freertos hook function end*/
 void NMI_Handler(void)
 {
 }
@@ -32,18 +68,9 @@ void UsageFault_Handler(void)
     {
     }
 }
-void SVC_Handler(void)
-{
-}
+
 void DebugMon_Handler(void)
 {
-}
-void PendSV_Handler(void)
-{
-}
-void SysTick_Handler(void)
-{
-    HAL_IncTick();
 }
 void WWDG_IRQHandler(void)
 {

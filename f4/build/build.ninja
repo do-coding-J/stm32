@@ -808,77 +808,85 @@ build libstm32cubef4.a: C_STATIC_LIBRARY_LINKER__stm32cubef4_Debug CMakeFiles/st
 #############################################
 # Order-only phony target for STM32F4
 
-build cmake_object_order_depends_target_STM32F4: phony || cmake_object_order_depends_target_stm32cubef4
+build cmake_object_order_depends_target_STM32F4: phony || cmake_object_order_depends_target_freertos_kernel cmake_object_order_depends_target_freertos_kernel_port cmake_object_order_depends_target_stm32cubef4
 
 build CMakeFiles/STM32F4.dir/Core/Config/msp.c.obj: C_COMPILER__STM32F4_Debug /home/jj/ws/personal/stm32/f4/Core/Config/msp.c || cmake_object_order_depends_target_STM32F4
-  DEFINES = -DSTM32F446xx
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
   DEP_FILE = CMakeFiles/STM32F4.dir/Core/Config/msp.c.obj.d
   FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
-  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
   OBJECT_DIR = CMakeFiles/STM32F4.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F4.dir/Core/Config
 
 build CMakeFiles/STM32F4.dir/Core/Config/syscall.c.obj: C_COMPILER__STM32F4_Debug /home/jj/ws/personal/stm32/f4/Core/Config/syscall.c || cmake_object_order_depends_target_STM32F4
-  DEFINES = -DSTM32F446xx
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
   DEP_FILE = CMakeFiles/STM32F4.dir/Core/Config/syscall.c.obj.d
   FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
-  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
   OBJECT_DIR = CMakeFiles/STM32F4.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F4.dir/Core/Config
 
 build CMakeFiles/STM32F4.dir/Core/Config/sysmem.c.obj: C_COMPILER__STM32F4_Debug /home/jj/ws/personal/stm32/f4/Core/Config/sysmem.c || cmake_object_order_depends_target_STM32F4
-  DEFINES = -DSTM32F446xx
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
   DEP_FILE = CMakeFiles/STM32F4.dir/Core/Config/sysmem.c.obj.d
   FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
-  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
   OBJECT_DIR = CMakeFiles/STM32F4.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F4.dir/Core/Config
 
 build CMakeFiles/STM32F4.dir/Core/Config/system.c.obj: C_COMPILER__STM32F4_Debug /home/jj/ws/personal/stm32/f4/Core/Config/system.c || cmake_object_order_depends_target_STM32F4
-  DEFINES = -DSTM32F446xx
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
   DEP_FILE = CMakeFiles/STM32F4.dir/Core/Config/system.c.obj.d
   FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
-  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
   OBJECT_DIR = CMakeFiles/STM32F4.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F4.dir/Core/Config
 
 build CMakeFiles/STM32F4.dir/Core/Src/gpio.c.obj: C_COMPILER__STM32F4_Debug /home/jj/ws/personal/stm32/f4/Core/Src/gpio.c || cmake_object_order_depends_target_STM32F4
-  DEFINES = -DSTM32F446xx
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
   DEP_FILE = CMakeFiles/STM32F4.dir/Core/Src/gpio.c.obj.d
   FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
-  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
   OBJECT_DIR = CMakeFiles/STM32F4.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F4.dir/Core/Src
 
 build CMakeFiles/STM32F4.dir/Core/Src/it.c.obj: C_COMPILER__STM32F4_Debug /home/jj/ws/personal/stm32/f4/Core/Src/it.c || cmake_object_order_depends_target_STM32F4
-  DEFINES = -DSTM32F446xx
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
   DEP_FILE = CMakeFiles/STM32F4.dir/Core/Src/it.c.obj.d
   FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
-  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
   OBJECT_DIR = CMakeFiles/STM32F4.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F4.dir/Core/Src
 
 build CMakeFiles/STM32F4.dir/Core/Src/main.c.obj: C_COMPILER__STM32F4_Debug /home/jj/ws/personal/stm32/f4/Core/Src/main.c || cmake_object_order_depends_target_STM32F4
-  DEFINES = -DSTM32F446xx
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
   DEP_FILE = CMakeFiles/STM32F4.dir/Core/Src/main.c.obj.d
   FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
-  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
   OBJECT_DIR = CMakeFiles/STM32F4.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F4.dir/Core/Src
 
 build CMakeFiles/STM32F4.dir/Core/Src/tim.c.obj: C_COMPILER__STM32F4_Debug /home/jj/ws/personal/stm32/f4/Core/Src/tim.c || cmake_object_order_depends_target_STM32F4
-  DEFINES = -DSTM32F446xx
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
   DEP_FILE = CMakeFiles/STM32F4.dir/Core/Src/tim.c.obj.d
   FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
-  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
+  OBJECT_DIR = CMakeFiles/STM32F4.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM32F4.dir/Core/Src
+
+build CMakeFiles/STM32F4.dir/Core/Src/usr_tasks.c.obj: C_COMPILER__STM32F4_Debug /home/jj/ws/personal/stm32/f4/Core/Src/usr_tasks.c || cmake_object_order_depends_target_STM32F4
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
+  DEP_FILE = CMakeFiles/STM32F4.dir/Core/Src/usr_tasks.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
   OBJECT_DIR = CMakeFiles/STM32F4.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F4.dir/Core/Src
 
 build CMakeFiles/STM32F4.dir/Core/Config/startup_stm32f446xx.s.obj: ASM_COMPILER__STM32F4_Debug /home/jj/ws/personal/stm32/f4/Core/Config/startup_stm32f446xx.s || cmake_object_order_depends_target_STM32F4
-  DEFINES = -DSTM32F446xx
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
   DEP_FILE = CMakeFiles/STM32F4.dir/Core/Config/startup_stm32f446xx.s.obj.d
   FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
-  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/Core/Config
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/Core/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/jj/ws/personal/stm32/f4/STM32CubeF4/Drivers/CMSIS/Include -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
   OBJECT_DIR = CMakeFiles/STM32F4.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F4.dir/Core/Config
 
@@ -890,10 +898,10 @@ build CMakeFiles/STM32F4.dir/Core/Config/startup_stm32f446xx.s.obj: ASM_COMPILER
 #############################################
 # Link the executable STM32F4.elf
 
-build STM32F4.elf: C_EXECUTABLE_LINKER__STM32F4_Debug CMakeFiles/STM32F4.dir/Core/Config/msp.c.obj CMakeFiles/STM32F4.dir/Core/Config/syscall.c.obj CMakeFiles/STM32F4.dir/Core/Config/sysmem.c.obj CMakeFiles/STM32F4.dir/Core/Config/system.c.obj CMakeFiles/STM32F4.dir/Core/Src/gpio.c.obj CMakeFiles/STM32F4.dir/Core/Src/it.c.obj CMakeFiles/STM32F4.dir/Core/Src/main.c.obj CMakeFiles/STM32F4.dir/Core/Src/tim.c.obj CMakeFiles/STM32F4.dir/Core/Config/startup_stm32f446xx.s.obj | libstm32cubef4.a || libstm32cubef4.a
+build STM32F4.elf: C_EXECUTABLE_LINKER__STM32F4_Debug CMakeFiles/STM32F4.dir/Core/Config/msp.c.obj CMakeFiles/STM32F4.dir/Core/Config/syscall.c.obj CMakeFiles/STM32F4.dir/Core/Config/sysmem.c.obj CMakeFiles/STM32F4.dir/Core/Config/system.c.obj CMakeFiles/STM32F4.dir/Core/Src/gpio.c.obj CMakeFiles/STM32F4.dir/Core/Src/it.c.obj CMakeFiles/STM32F4.dir/Core/Src/main.c.obj CMakeFiles/STM32F4.dir/Core/Src/tim.c.obj CMakeFiles/STM32F4.dir/Core/Src/usr_tasks.c.obj CMakeFiles/STM32F4.dir/Core/Config/startup_stm32f446xx.s.obj | libstm32cubef4.a FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a libstm32cubef4.a || FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a FreeRTOS/FreeRTOS/Source/portable/freertos_kernel_port libstm32cubef4.a
   FLAGS = -g
   LINK_FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wl,--start-group -lc -lm -lstdc++ -Wl,--end-group -Wl,--print-memory-usage -T/home/jj/ws/personal/stm32/f4/Core/Config/FLASH.ld
-  LINK_LIBRARIES = libstm32cubef4.a
+  LINK_LIBRARIES = libstm32cubef4.a  FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a  libstm32cubef4.a
   OBJECT_DIR = CMakeFiles/STM32F4.dir
   POST_BUILD = cd /home/jj/ws/personal/stm32/f4/build && /usr/bin/arm-none-eabi-objcopy -O binary /home/jj/ws/personal/stm32/f4/build/STM32F4.elf /home/jj/ws/personal/stm32/f4/build/STM32F4.bin
   PRE_LINK = :
@@ -924,9 +932,212 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/jj/ws/personal/stm32/f4/FreeRTOS.cmake
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target freertos_kernel
+
+
+#############################################
+# Order-only phony target for freertos_kernel
+
+build cmake_object_order_depends_target_freertos_kernel: phony || cmake_object_order_depends_target_freertos_kernel_port
+
+build FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/croutine.c.obj: C_COMPILER__freertos_kernel_Debug /home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/croutine.c || cmake_object_order_depends_target_freertos_kernel
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
+  DEP_FILE = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/croutine.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
+  OBJECT_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+  OBJECT_FILE_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+
+build FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/event_groups.c.obj: C_COMPILER__freertos_kernel_Debug /home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/event_groups.c || cmake_object_order_depends_target_freertos_kernel
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
+  DEP_FILE = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/event_groups.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
+  OBJECT_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+  OBJECT_FILE_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+
+build FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.obj: C_COMPILER__freertos_kernel_Debug /home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/list.c || cmake_object_order_depends_target_freertos_kernel
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
+  DEP_FILE = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
+  OBJECT_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+  OBJECT_FILE_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+
+build FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.obj: C_COMPILER__freertos_kernel_Debug /home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/queue.c || cmake_object_order_depends_target_freertos_kernel
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
+  DEP_FILE = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
+  OBJECT_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+  OBJECT_FILE_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+
+build FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj: C_COMPILER__freertos_kernel_Debug /home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/stream_buffer.c || cmake_object_order_depends_target_freertos_kernel
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
+  DEP_FILE = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
+  OBJECT_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+  OBJECT_FILE_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+
+build FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.obj: C_COMPILER__freertos_kernel_Debug /home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/tasks.c || cmake_object_order_depends_target_freertos_kernel
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
+  DEP_FILE = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
+  OBJECT_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+  OBJECT_FILE_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+
+build FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.obj: C_COMPILER__freertos_kernel_Debug /home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/timers.c || cmake_object_order_depends_target_freertos_kernel
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
+  DEP_FILE = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
+  OBJECT_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+  OBJECT_FILE_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+
+build FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj: C_COMPILER__freertos_kernel_Debug /home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_4.c || cmake_object_order_depends_target_freertos_kernel
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
+  DEP_FILE = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -isystem /home/jj/ws/personal/stm32/f4/Core/Config
+  OBJECT_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+  OBJECT_FILE_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target freertos_kernel
+
+
+#############################################
+# Link the static library FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a
+
+build FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a: C_STATIC_LIBRARY_LINKER__freertos_kernel_Debug FreeRTOS/FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM4F/port.c.obj FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/croutine.c.obj FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/event_groups.c.obj FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.obj FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.obj FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.obj FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.obj FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj || FreeRTOS/FreeRTOS/Source/portable/freertos_kernel_port
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = FreeRTOS/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a
+  TARGET_PDB = freertos_kernel.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build FreeRTOS/FreeRTOS/Source/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build FreeRTOS/FreeRTOS/Source/edit_cache: phony FreeRTOS/FreeRTOS/Source/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build FreeRTOS/FreeRTOS/Source/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source && /usr/bin/cmake --regenerate-during-build -S/home/jj/ws/personal/stm32/f4 -B/home/jj/ws/personal/stm32/f4/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build FreeRTOS/FreeRTOS/Source/rebuild_cache: phony FreeRTOS/FreeRTOS/Source/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build FreeRTOS/FreeRTOS/Source/include/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source/include && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build FreeRTOS/FreeRTOS/Source/include/edit_cache: phony FreeRTOS/FreeRTOS/Source/include/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build FreeRTOS/FreeRTOS/Source/include/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source/include && /usr/bin/cmake --regenerate-during-build -S/home/jj/ws/personal/stm32/f4 -B/home/jj/ws/personal/stm32/f4/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build FreeRTOS/FreeRTOS/Source/include/rebuild_cache: phony FreeRTOS/FreeRTOS/Source/include/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for OBJECT_LIBRARY target freertos_kernel_port
+
+
+#############################################
+# Order-only phony target for freertos_kernel_port
+
+build cmake_object_order_depends_target_freertos_kernel_port: phony || FreeRTOS/FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir
+
+build FreeRTOS/FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM4F/port.c.obj: C_COMPILER__freertos_kernel_port_Debug /home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c || cmake_object_order_depends_target_freertos_kernel_port
+  DEFINES = -DSTM32F446xx -DprojCOVERAGE_TEST=0
+  DEP_FILE = FreeRTOS/FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM4F/port.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections --specs=nosys.specs -Wl,--gc-sections -Wall -Wextra -Wno-unused-parameter -Wno-binary-constants -Og -g3 -ggdb --verbose
+  INCLUDES = -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/home/jj/ws/personal/stm32/f4/FreeRTOS/FreeRTOS/Source/include/. -isystem /home/jj/ws/personal/stm32/f4/Core/Config
+  OBJECT_DIR = FreeRTOS/FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir
+  OBJECT_FILE_DIR = FreeRTOS/FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM4F
+
+
+
+#############################################
+# Object library freertos_kernel_port
+
+build FreeRTOS/FreeRTOS/Source/portable/freertos_kernel_port: phony FreeRTOS/FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM4F/port.c.obj
+
+
+#############################################
+# Utility command for edit_cache
+
+build FreeRTOS/FreeRTOS/Source/portable/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source/portable && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build FreeRTOS/FreeRTOS/Source/portable/edit_cache: phony FreeRTOS/FreeRTOS/Source/portable/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build FreeRTOS/FreeRTOS/Source/portable/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source/portable && /usr/bin/cmake --regenerate-during-build -S/home/jj/ws/personal/stm32/f4 -B/home/jj/ws/personal/stm32/f4/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build FreeRTOS/FreeRTOS/Source/portable/rebuild_cache: phony FreeRTOS/FreeRTOS/Source/portable/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build STM32F4: phony STM32F4.elf
+
+build freertos_kernel: phony FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a
+
+build freertos_kernel_port: phony FreeRTOS/FreeRTOS/Source/portable/freertos_kernel_port
+
+build libfreertos_kernel.a: phony FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a
 
 build stm32cubef4: phony libstm32cubef4.a
 
@@ -938,7 +1149,28 @@ build stm32cubef4: phony libstm32cubef4.a
 #############################################
 # Folder: /home/jj/ws/personal/stm32/f4/build
 
-build all: phony libstm32cubef4.a STM32F4.elf
+build all: phony libstm32cubef4.a STM32F4.elf FreeRTOS/FreeRTOS/Source/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source
+
+build FreeRTOS/FreeRTOS/Source/all: phony FreeRTOS/FreeRTOS/Source/libfreertos_kernel.a FreeRTOS/FreeRTOS/Source/include/all FreeRTOS/FreeRTOS/Source/portable/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source/include
+
+build FreeRTOS/FreeRTOS/Source/include/all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: /home/jj/ws/personal/stm32/f4/build/FreeRTOS/FreeRTOS/Source/portable
+
+build FreeRTOS/FreeRTOS/Source/portable/all: phony FreeRTOS/FreeRTOS/Source/portable/freertos_kernel_port
 
 # =============================================================================
 # Built-in targets
@@ -947,14 +1179,14 @@ build all: phony libstm32cubef4.a STM32F4.elf
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../STM32CubeF4.cmake ../arm.toolchain /usr/share/cmake-3.22/Modules/CMakeASMInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-ASM.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeASMCompiler.cmake CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../FreeRTOS.cmake ../FreeRTOS/FreeRTOS/Source/CMakeLists.txt ../FreeRTOS/FreeRTOS/Source/include/CMakeLists.txt ../FreeRTOS/FreeRTOS/Source/portable/CMakeLists.txt ../STM32CubeF4.cmake ../arm.toolchain /usr/share/cmake-3.22/Modules/CMakeASMInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-ASM.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeASMCompiler.cmake CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../STM32CubeF4.cmake ../arm.toolchain /usr/share/cmake-3.22/Modules/CMakeASMInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-ASM.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeASMCompiler.cmake CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../FreeRTOS.cmake ../FreeRTOS/FreeRTOS/Source/CMakeLists.txt ../FreeRTOS/FreeRTOS/Source/include/CMakeLists.txt ../FreeRTOS/FreeRTOS/Source/portable/CMakeLists.txt ../STM32CubeF4.cmake ../arm.toolchain /usr/share/cmake-3.22/Modules/CMakeASMInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-ASM.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeASMCompiler.cmake CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
 
 
 #############################################
